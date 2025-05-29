@@ -1,9 +1,12 @@
-import { View, Text } from "react-native";
+import { Text, View } from "react-native";
+import mediaList from '@assets/data/mediaList.json';
 
 export default function HomeScreen() {
+  const mediaItem = mediaList[0];
+
   return (
     <View>
-      <Text>Hello, world! iooupou ioo !!!!!!!!!!!o o </Text>
+      <Text style={{color: "white"}}>{mediaItem.title}</Text>
     </View>
   );
 }

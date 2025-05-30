@@ -18,7 +18,12 @@ export default function RootLayout() {
     <ThemeProvider value={myTheme}>
    
    
-        <Stack />
+        <Stack screenOptions={
+          {
+            headerShown: false,
+            contentStyle: { backgroundColor: 'black' },
+          }
+        } />
         
       </ThemeProvider>
 
